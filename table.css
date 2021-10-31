@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*
+      Final Webpage Assignment
+      Author: Andrew Gross
+      Date:   November 7th, 2018
+
+      Filename:   table.css
+*/
+
+
+
+
+/* HTML Styles */
+
+table {
+  text-align: center;
+  margin: auto;
+}
+
+table, th, tr, td, tfoot {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td#td1 {
+  font-style: italic;
+  font-size: 18px;
+}
+
+tr:hover, tr:nth-child(even):hover {
+  background-color: white;
+  color: SlateBlue;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: SlateBlue;
+}
+
+tr {
+  background-color: rgb(147, 131, 250);
+}
+td {
+  margin: auto;
+  padding: 15px;
+  background-color: inherit;
+}
+
+th {
+  padding: 5px 15px;
+  background-color: white;
+  color: SlateBlue;
+  font-weight: bold;
+}
+
+td#tfoot_td {
+  background-color: white;
+  color: SlateBlue;
+  font-weight: bold;
+}
+caption {
+  margin: 10px 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.anus {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.anus-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(147, 131, 250);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.anus:hover {
+  font-weight: bold;
+}
+.anus:hover .anus-content {
+    display: block;
+}
+
+.footer {
+  margin-top: 0px;
+}
+
+img {
+  margin: 15px 22.5em;
+  width: 250px;
+  height: 250px;
+  box-shadow: 10px 5px 10px 2.5px rgba(0,0,0,0.2);
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 10px;
+}

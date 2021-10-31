@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*
+      Final Webpage Assignment
+      Author: Andrew Gross
+      Date:   November 20th, 2018
+
+      Filename:   print.css
+*/
+
+
+
+
+/* HTML Styles */
+
+@page {
+	size:8.5in 11in;
+	margin: 0px;
+}
+
+@media print {
+.navbar{
+	visibility:hidden;
+}
+body, header, h1 {
+	background-color:white;
+  color: black;
+}
+h1 {
+	margin: 0px;
+}
+body {
+  padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+HTML {
+	background-color:white;
+	color:black;
+}
+table, td, th {
+	color:black;
+}
+#trh {
+	color:black;
+	background-color:white;
+}
+tr {
+	background-color:white;
+	color:black;
+}
+#tr1 {
+	background-color:white;
+	color:black;
+}
+td#tfoot_td {
+  background-color:white;
+	color:black;
+}
+p::first-letter {
+	color:black;
+}
+
+footer a {
+	color:black;
+}
+
+caption{
+  margin: 1px;
+}
+
+
+}

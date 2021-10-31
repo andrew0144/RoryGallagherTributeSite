@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+
+
+      Final Webpage Assignment
+      Author: Andrew Gross
+      Date:   November 7th, 2018
+
+      Filename:   fansurvey.html
+
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="guitar, music, guitarist, Andrew Gross, Rory Gallagher" />
+   <link href="Reset.css" rel="stylesheet" />
+   <link href="index.css" rel="stylesheet" />
+   <link href="fansurvey.css" rel="stylesheet" />
+   <link href="mobile.css" rel="stylesheet" />
+
+   </head>
+   <body>
+     <div class="body">
+   <header>
+     <div class="navbar">
+       <div class="dropdown">
+         <button class="dropbtn">Menu
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="index.html">Home</a>
+           <a href="fansurvey.html">Fan Survey</a>
+           <a href="history.html">Albums & History</a>
+         </div>
+       </div>
+     </div>
+   </header>
+
+   <section id="surveysection">
+
+      <h1>Fan Survey</h1>
+      <hr />
+      <h3><p>Thank you for taking our fan survey. Your response
+         helps us accurately review Rory Gallagher's albums and gauge his popularity based on user submission. </p></h3>
+         <p id="requiredValues">Required values are marked by an asterisk (*)</p>
+
+      <img src="rg5.jpg" id="rg5-1" ></img>
+
+   <form id="survey" action="http://www.example.com/rorygallagher/survey" method="post">
+   <fieldset id="contInfo">
+     <legend>Contact Information</legend>
+   <div class="formRow">
+     <label for ="name">Name*</label>
+     <input name="custName" id="name" type="text" placeholder="first and last name" required />
+   </div>
+
+   <div class="formRow">
+     <label for="street">Street address</label>
+     <input name="custStreet" id="street" type="text" />
+   </div>
+
+   <div class="formRow">
+     <label for="city">City</label>
+     <input name="custCity" id"city" type="text" value="Miamisburg" />
+   </div>
+
+   <div class="formRow">
+     <label for="state">State</label>
+     <input name="custState" id="state" type="text" value="OH" />
+   </div>
+
+   <div class="formRow">
+     <label for="zip">Postal Code</label>
+     <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"
+     pattern="^\d{5}(-\d{4})?$"/>
+   </div>
+
+   <div class="formRow">
+     <label for="phone">Phone Number*</label>
+     <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+     pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+   </div>
+
+   <div class="formRow">
+     <label for="mail">E-mail*</label>
+     <input name="custEmail" id="mail" type="email" required />
+   </div>
+ </fieldset>
+
+  <fieldset id="surveyinfo">
+   <legend>Fan Survey</legend>
+
+   <div class="formRow">
+     <label for="album">Which album listed here is your favorite?</label>
+     <input name="favAlbum" id="album" type="text" list="albumChoice" />
+     <datalist id="albumChoice">
+       <option value="Rory Gallagher" />
+       <option value="Deuce" />
+       <option value="Blueprint" />
+       <option value="Tattoo" />
+       <option value="Against the Grain" />
+       <option value="Calling Card" />
+       <option value="Photo-finish" />
+       <option value="Top Priority" />
+       <option value="Jinx" />
+       <option value="Defender" />
+       <option value="Fresh Evidence" />
+       <option value="Notes from San Francisco" />
+
+     </datalist>
+   </div>
+
+   <div class="formRow">
+     <label for="allReview">Out of 10, what would you rate Rory Gallagher's music as a whole?</label>
+     <input name="allReview" id="allReview" type="number"
+         value="1" step="0.5" min="0" max="10" />
+   </div>
+
+   <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+   <label for="mailCB">Click to be added to our Rory Gallagher mailing list</label>
+
+   <div class="formRow">
+    <label for="review">Type an Album Review Here:</label>
+   <textarea name="review" id="review" rows="10" cols="25">
+   </textarea>
+ </div>
+
+   <input type="hidden" id="hiddenField" name="hiddenField" value="this field is hidden.. hooray" />
+   </fieldset>
+
+   <fieldset id="demographic">
+     <legend>Demographic Information</legend>
+
+     <div class="formRow">
+       <label for="order">Which age group fits you best?</label>
+       <select name="ageRange" id="ageRange">
+         <option value="ageRange1">1-8 years old</option>
+         <option value="ageRange2">9-14 years old</option>
+         <option value="ageRange3">15-18 years old</option>
+         <option value="ageRange4">19-25 years old</option>
+         <option value="ageRange5">26-30 years old</option>
+         <option value="ageRange6">31-50 years old</option>
+         <option value="ageRange7">51+ years old</option>
+       </select>
+     </div>
+
+     <div class="formRow">
+       <label>Do you play an instrument?</label>
+       <fieldset class="optGroup">
+         <label for="hYes">Yes</label>
+         <input name="footHot" id="hYes" value="yes" type="radio" />
+         <label for="hNo">No</label>
+         <input name="foodHot" id="hNo" vlaue="no" type="radio" />
+       </fieldset>
+     </div>
+     <div class="formRow">
+       <label>Which genres do you like?</label>
+       <fieldset class="optGroup">
+         <label for="rnB">R & B</label>
+         <input name="rnB" type="checkbox" />
+         <label for="cR">Classic Rock</label>
+         <input name="cR" type="checkbox" />
+         <label for="mR">Modern Rock</label>
+         <input name="mR" type="checkbox" />
+         <label for="J">Jazz</label>
+         <input name="J" type="checkbox" />
+         <label for="hhR">Hip Hop/Rap</label>
+         <input name="hhR" type="checkbox" />
+         <label for="C">Classical</label>
+         <input name="C" type="checkbox" />
+       </fieldset>
+     </div>
+     <label for="commBox">Tell us more about your music taste here:</label>
+     <textarea name="custExp" id="commBox"></textarea>
+   </fieldset>
+   <div id="buttons">
+     <input id="submit" type="submit" value="Submit My Survey" />
+     <input id="submit" type="reset" value="Reset" />
+   </div>
+
+  <img src="rg5.jpg" id="rg5-2"></img>
+ </section>
+ <div class="footer">
+   <aside id="footerAside">
+   <h3>Contact Information & Other Info</h3>
+   <p><a href="mailto:andrew144@sbcglobal.net" target="_top">andrew144@sbcglobal.net</a></p>
+   <p>(937)272-2314</p>
+   <p>Date Last Revised: 11/20/18</p>
+   <p>Copyright 2018</p>
+   <p><a href="#top">Back to Top</a></p>
+  </aside>
+ </div>
+</div>
+</body>
+</html>

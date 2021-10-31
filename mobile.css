@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/*
+      Final Webpage Assignment
+      Author: Andrew Gross
+      Date:   November 30th, 2018
+
+      Filename:   mobile.css
+*/
+
+
+/* ===============================
+	Mobile Styles: 0px to 480px
+	===============================
+*/
+@media only screen and (max-width: 480px) {
+
+
+button.dropbtn, .navbar a {
+	font-size: 2.5em !important;
+}
+	body {
+		padding-bottom: 100%;
+	}
+
+	.navbar {
+		margin: 0px;
+	}
+	.otherWebsites {
+		border-top: 8px solid rgb(147, 131, 250);
+		margin-bottom: 10px;
+	}
+	.row {
+		flex-wrap: wrap-reverse;
+	}
+	.rightColumn, .leftColumn {
+		font-size: 2.25em;
+		border-left: none;
+	}
+
+	.leftColumn {
+		align-content: center;
+	}
+	h1 {
+		font-size: 4em;
+	}
+	img#historyimg {
+		margin: 10px;
+		width: 75%;
+		height: 100%;
+	}
+	figcaption, caption{
+		font-size: 2em;
+	}
+	table.albums1 {
+		width: 95%;
+		font-size: 1.5em;
+	}
+	td, td#td1 {
+		font-size: 1.5em;
+		padding: 5px;
+	}
+	img#roryscream {
+		width: 100%;
+	}
+	img#rg5-1 {
+		display: none;
+	}
+	img#rg5-2 {
+		display: block;
+		width:75%;
+		height: 100%;
+		margin-left: 70px;
+	}
+	.paragraphDiv{
+		border-bottom: 8px solid rgb(147, 131, 250);
+	}
+	.paragraphDiv#pD1 {
+		border-top: 8px solid rgb(147, 131, 250);
+	}
+	section#surveysection {
+		font-size: 2em;
+	}
+	.footer {
+		font-size: 2em;
+	}
+	aside {
+		width: 80%;
+	}
+	aside#a3 {
+		width: 90%;
+	}
+	iframe {
+		width: 100%;
+		height: 400px;
+	}
+	p#ptop1 {
+		font-size: 1.9em;
+		margin: 10px;
+	}
+	.tableDiv {
+		text-align: center;
+		border-top: 5px solid rgb(147, 131, 250);
+	}
+	.anus:hover .anus-content {
+	    display: block;
+			right: 0;
+	}
+	.buttons {
+		text-align: center;
+	}
+	input#submit, input#reset {
+		margin: 5px  175px;
+	}
+}
+
+/* ================================
+	Tablet Styles: 481px and greater
+	================================
+*/
+@media only screen and (min-width: 481px) and (max-width: 865px) {
+
+	.row {
+		flex-wrap: wrap-reverse;
+	}
+	button.dropbtn, .navbar a {
+		font-size: 1.5em !important;
+	}
+	.footer {
+		font-size: 1.25em;
+	}
+	.rightColumn, .leftColumn {
+		font-size: 1.25em;
+		border-left: none;
+	}
+
+	img#roryscream {
+		width: 50%;
+	}
+	.leftColumn {
+		text-align: center;
+		border-top:5px solid rgb(147, 131, 250);
+	}
+	aside#a3 {
+		width: 50%;
+		margin-left: 25%;
+	}
+	aside#a2 {
+		margin-bottom: 10px;
+	}
+	.tableDiv {
+		text-align: center;
+		border-top: 5px solid rgb(147, 131, 250);
+	}
+	.body {
+		width: 100%;
+	}
+	img#historyimg {
+		margin: 10px;
+		width: 50%;
+		height: 100%;
+	}
+}
